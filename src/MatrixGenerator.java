@@ -1,6 +1,16 @@
+/**
+ * Клас для генерації матриць із випадковими елементами.
+ */
 import java.util.Random;
 
 class MatrixGenerator {
+    /**
+     * Генерує матрицю з випадковими елементами в діапазоні [-50, 50].
+     *
+     * @param rows кількість рядків
+     * @param cols кількість стовпців
+     * @return згенерована матриця
+     */
     public static Matrix generateMatrix(int rows, int cols) {
         Matrix matrix = new Matrix(rows, cols);
         Random random = new Random();
